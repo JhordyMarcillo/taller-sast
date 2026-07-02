@@ -21,7 +21,7 @@ export class AllExceptionsFilter implements ExceptionFilter {
             status = exception.getStatus();
             const exceptionResponse = exception.getResponse();
             // Si el mensaje de la excepción es un string, lo usamos directamente
-            // Si es un objeto (ej. ValidationPipe), extraemos el array de mensajes
+            // Si es un objeto (ej. ValidationPipe), extraem  os el array de mensajes
             message =
                 typeof exceptionResponse === 'string'
                     ? exceptionResponse
